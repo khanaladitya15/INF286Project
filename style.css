@@ -18,3 +18,17 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(157,157,208,1) 0%, rg
     border-radius: 5px;
     width: fit-content;
 }
+.inputClass{
+    margin: 20px;
+}
+.main-class{
+    margin: 20px;
+}
+.btn-1{
+    padding: 8px 16px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+}
