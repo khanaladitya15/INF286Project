@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap');
 *{
     box-sizing: border-box;
 }
@@ -23,11 +24,13 @@ body{
     letter-spacing: 2px;
     margin-top: 10px;
     color: #fff;
+    font-family: 'Manrope', sans-serif;
 }
 .ak-info{
     padding: auto;
     margin-top: 9px;
     color: #fff;
+    font-family: 'Quicksand', sans-serif;
 
 }
 .ol-1{
@@ -49,7 +52,7 @@ body{
     color: white;
     border: none;
     border-radius: 4px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Manrope', sans-serif;
 }
 .row{
     padding: 10px;
