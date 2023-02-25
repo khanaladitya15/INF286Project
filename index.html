@@ -4,66 +4,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>AadityaKhanal</title>
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    
-        <h1 class="main-title"> Hello!, I am Aaditya</h1>
-        <p>I am a 19-year-old student who is currently pursuing his studies at Northern Kentucky University. I would express myself as bright and ambitious individual with a passion for learning and a drive to succeed. With his dedication and hard work, I am making the most of his university experience and is well on my way to achieving his academic and personal goals. 
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid ">
+        <!-- Logo -->
+        <a class="navbar-brand main-logo" href="#">AK</a>
+        <!-- Hamburger menu button for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Links -->
+        <div class="collapse navbar-collapse d-flex flex-row-reverse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Interests</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Favorite Shows</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav> 
+<div class=" container jumbotron">
+  <h1 class="main-title"> Hello!, I am Aaditya</h1>
+        <p class="ak-info">I am a 19-year-old student who is currently pursuing his studies at Northern Kentucky University. I would express myself as bright and ambitious individual with a passion for learning and a drive to succeed. With his dedication and hard work, I am making the most of his university experience and is well on my way to achieving his academic and personal goals. 
         </p>
-        <h4>My interests are as follows: </h4>
-        <ul>
-            <li>Gym</li>
-            <li>Web Design</li>
-            <li>Data Science</li>
-            <li>Exploring international cuisines etc.</li>
-        </ul>
-        <br>
-        <h4>My favorite shows or movies are: </h4>
+</div>  
+        <div class="container-md ">
+          <div class="row gx-5">
+            <div class="col-md box-1">
+              <h4>My interests are as follows: </h4>
+            <ul>
+               <li>Gym</li>
+               <li>Web Design</li>
+               <li>Data Science</li>
+               <li>Exploring international cuisines etc.</li>
+            </ul>
+            <button type="button" class="btn btn-primary" >View More</button>
+            </div>
+            <div class="col-md box-2">
+              <h4>My favorite shows or movies are: </h4>
         <ol>
             <li class="ol-1">The Call</li>
             <li class="ol-1">Breaking Bad</li>
             <li class="ol-1">The Courier</li>
             <li class="ol-1">The King's Man etc.</li>
         </ol>
-        <table border="1px solid" style="padding: 2px 4px; border-color: #333;">
-            <tr>
-                <th style="padding: 2px 4px;">S.N</th>
-                <th style="padding: 2px 4px;">Name</th>
-                <th style="padding: 2px 4px;">Email</th>
-                <th style="padding: 2px 4px;">Contact</th>
-            </tr>
-            <tr>
-                <td style="padding: 2px 4px;">1</td>
-                <td style="padding: 2px 4px;">Aaditya </td>
-                <td style="padding: 2px 4px;">khanala1@nku.edu</td>
-                <td style="padding: 2px 4px;">859959859</td>
-            </tr>
-            <tr>
-                <td style="padding: 2px 4px;">2</td>
-                <td style="padding: 2px 4px;">Aaditya </td>
-                <td style="padding: 2px 4px;">khanala1@nku.edu</td>
-                <td style="padding: 2px 4px;">859959859</td>
-            </tr>
-            <tr>
-                <td style="padding: 2px 4px;">3</td>
-                <td style="padding: 2px 4px;">Aaditya</td>
-                <td style="padding: 2px 4px;">khanala1@nku.edu</td>
-                <td style="padding: 2px 4px;">859959859</td>
-            </tr>
-       </table>
-       <div class="inputClass">
-        <form action="/action_page.php">
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname"><br><br>
-            <input type="submit" value="Submit">
-          </form>
-       </div>
-    <div class="main-class">
-        <button class="btn-1">Click here to view my profile</button>
-    </div>
+        <button type="button" class="btn btn-success" >View More</button>
+
+            </div>
+          </div>
+        </div> 
+        <br>
+        <div class="container">
+          <table class="table table-striped table-dark">
+            <thead class="">
+              <tr>
+                <th scope="col">S.N</th>
+                <th scope="col">First Name</th>
+                <th scope="col">Last Name</th>
+                <th scope="col">Contact</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Aaditya</td>
+                <td>Khanal</td>
+                <td>859-628-1641</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>xyz</td>
+                <td>zyx</td>
+                <td>859-628-1641</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>abc</td>
+                <td>cba</td>
+                <td>859-628-1641</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <form action="/action_page.php">
+                <div class="form-group">
+                  <label for="fname">First name:</label>
+                  <input type="text" class="form-control" id="fname" name="fname">
+                </div>
+                <div class="form-group">
+                  <label for="lname">Last name:</label>
+                  <input type="text" class="form-control" id="lname" name="lname">
+                </div>
+                <button type="submit" class="btn btn-outline-dark btn-submit">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        
+<div class="main-class d-flex justify-content-center">
+  <button type="button" class="btn btn-dark" onclick="eventHandler()">Click here to launch the API</button>
+  <div id="response"></div>
+</div>
+</div>
+    <script src="./external.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
