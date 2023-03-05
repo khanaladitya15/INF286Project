@@ -10,14 +10,4 @@ function eventHandler(){
       })
       .catch(error => console.error(error));
   }
-  async function makeHttpRequest(url) {
-    try {
-      const response = await fetch(url);
-      const data = await response.json();
-      console.log(`Status: ${response.status}`);
-      console.log(`Response: ${JSON.stringify(data)}`);
-    } catch (error) {
-      console.error(`Error: ${error}`);
-    }
-  }
-  makeHttpRequest('https://api.weather.gov/gridpoints/TOP/39,84/forecast');
+  

@@ -1,3 +1,4 @@
+
 const fs = require('fs');
 function lfid(path) {
   fs.readdir(path, (err, files) => {
@@ -10,6 +11,7 @@ function lfid(path) {
     });
   });
 }
+lfid();
 
 function readAsync(path, callback) {
   fs.readFile(path, 'utf8', (err, data) => {
@@ -20,7 +22,7 @@ function readAsync(path, callback) {
     }
   });
 }
-readAsync('./index.html', (err, data) => {
+readAsync('./sample.text', (err, data) => {
     if (err) {
       console.error(err);
     } else {
@@ -28,13 +30,13 @@ readAsync('./index.html', (err, data) => {
     }
   });
 
-var http = require('http');
-var fs = require('fs');
+  const axios = require('axios'); // or use import if you're using ES6 modules
 
-http.createServer(function(req,res){
-  fs.readFile('index.html',function(err,data){
-    res.writeHead(200,{'Content-Type':'text/html'});
-    res.write(data);
-    return res.end();
-  });
-}).listen(8080);
+  axios.get('https://api.weather.gov/gridpoints/TOP/39,84/forecast')
+    .then(response => {
+      console.log(`Status: ${response.status}`);
+      console.log(`Data: ${JSON.stringify(response.data)}`);
+    })
+    .catch(error => {
+      console.error(`Error: ${error}`);
+    })
