@@ -7,16 +7,19 @@ function calcLargeNum(){
 }
   return largest;
 }
-function eventHandler(){
-    const apiKey = '4ef5aa52aef97418172602dd43bfcc94';
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}`;
-  
-    fetch(url)
-      .then(response => response.json())
-      .then(data => {
-        const responseElement = document.getElementById('response');
-        responseElement.innerHTML = `The temperature in London is ${data.main.temp} Kelvin.`;
-      })
-      .catch(error => console.error(error));
+
+// Program to check whether the input is palindrome or not 
+  function checkPalindrome(strData) {
+    strData = strData.toLowerCase().replace(/[^a-z0-9]/g, '');
+    
+    for (let i = 0; i < Math.floor(strData.length / 2); i++) {
+      if (strData[i] !== strData[strData.length - 1 - i]) {
+        console.log('Not a palindrome')
+      }
+    }
+    console.log('It is a palindrome number.')
   }
+  
+
+
 
