@@ -30,13 +30,19 @@ readAsync('./sample.text', (err, data) => {
     }
   });
 
-  const axios = require('axios'); // or use import if you're using ES6 modules
+  const axios = require('axios');
 
-  axios.get('https://api.weather.gov/gridpoints/TOP/39,84/forecast')
-    .then(response => {
-      console.log(`Status: ${response.status}`);
-      console.log(`Data: ${JSON.stringify(response.data)}`);
-    })
-    .catch(error => {
-      console.error(`Error: ${error}`);
-    })
+  async function makeHttpRequest(url) {
+    try {
+      const response = await axios.get(url);
+      console.log(`Status code: ${response.status}`);
+      console.log(`Response data: ${response.data}`);
+    } catch (error) {
+      console.error(error);
+    }
+  }
+  
+  
+  makeHttpRequest('https://api.weather.gov/gridpoints/TOP/40,74/forecast')
+    .then(() => console.log('Request complete'))
+    .catch((error) => console.error(`Request failed: ${error.message}`));
