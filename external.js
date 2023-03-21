@@ -20,6 +20,9 @@ function calcLargeNum(){
     console.log('It is a palindrome number.')
   }
   
-
+checkPalindrome('MOM');
+checkPalindrome('palindrome')
+checkPalindrome('kayak')
+checkPalindrome('323');
 
 
